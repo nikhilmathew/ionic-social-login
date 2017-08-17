@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-socialsignedin',
   templateUrl: './socialsignedin.component.html',
-  styleUrls: ['./socialsignedin.component.scss']
+//   styleUrls: ['./socialsignedin.component.scss']
 })
 export class SocialsignedinComponent implements OnInit {
   userData = {

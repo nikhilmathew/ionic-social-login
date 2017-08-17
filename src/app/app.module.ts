@@ -13,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { RestProvider } from '../providers/rest/rest';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,6 @@ import { HomePage } from '../pages/home/home';
     HomeComponent,
     InitialComponent,
     SocialsignedinComponent,
-    AuthService,
-    Angular2SocialLoginService,
-    LoginsuService,
 
     
   ],
@@ -34,8 +32,12 @@ import { HomePage } from '../pages/home/home';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+   MyApp,
+    HomePage,
+    LoginComponent,
+    HomeComponent,
+    InitialComponent,
+    SocialsignedinComponent,
   ],
   providers: [
     StatusBar,
@@ -43,7 +45,8 @@ import { HomePage } from '../pages/home/home';
     AuthService,
     Angular2SocialLoginService,
     LoginsuService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RestProvider
   ]
 })
 export class AppModule {}
