@@ -1,0 +1,14 @@
+<div class="image_container center">
+  <img src={{userData.image}}>
+</div>
+<h1>Hi</h1>
+<h4> {{ userData.email }}</h4>
+
+<h3>Are you a new user?</h3>
+
+<div class="button_container">
+      <button class="btn btn-custom btn-purple" (click)="newUser()">Yes, I am a new user
+      </button>
+      <button class="btn btn-custom btn-green" (click)="oldUser()">NO, I HAVE AN OLD ACCOUNT
+      </button>
+  </div>

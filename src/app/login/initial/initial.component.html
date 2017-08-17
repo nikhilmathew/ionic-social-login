@@ -1,0 +1,25 @@
+<ion-content padding>
+  <div class="image_container center">
+    <img src="../assets/profile_image.png">
+  </div>
+  <h1> LOGIN</h1>
+  <h3> USING</h3>
+  <div class="button_container">
+    <div class="google_button social_button media" (click)="signIn('google')">
+      <div class="media-left media-middle social_icon">
+        <img class="google_icon social_icon" src="../assets/google_v3.svg">
+      </div>
+      <div class="media-body button_google">
+        <p class="social_text">Google</p>
+      </div>
+    </div>
+    <div class="facebook_button social_button media" (click)="signIn('facebook')">
+      <div class="media-left media-middle social_icon">
+        <img class="facebook_icon social_icon" src="../assets/fb.svg">
+      </div>
+      <div class="media-body button_fb">
+        <p class="social_text">Facebook</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

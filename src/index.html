@@ -10,7 +10,23 @@
   <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4e8ef7">
+  <style>
+  @font-face {
+      font-family: Alberto-Regular;
+      src: url('./assets/fonts/Alberto-Regular.ttf');
+  }
 
+  @font-face{
+    font-family: Ds-Digital-Bold;
+    src : url('./assets/fonts/digital/DS-DIGIB.ttf')
+  }
+  </style>
+  <script src="./assets/SFS2X_API_JS.js"></script>
+  <!--using old version of smartfox js api -->
+  <script src="./assets/vex/js/vex.combined.min.js"></script>
+  <script>
+    vex.defaultOptions.className = 'vex-theme-os'
+  </script>
   <!-- cordova.js required for cordova apps -->
   <script src="cordova.js"></script>
 
@@ -24,7 +40,11 @@
   </script>-->
 
   <link href="build/main.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="./assets/vex/css/vex.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/vex/css/vex-theme-os.css" />
 </head>
 <body>
 

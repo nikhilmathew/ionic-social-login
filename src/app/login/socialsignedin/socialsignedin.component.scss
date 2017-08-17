@@ -1,0 +1,29 @@
+.center{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image_container{
+        margin-top:16vh;
+        img{
+            width:inherit;
+            height:30vw;
+            border:3px solid black;
+            border-radius:100%;
+        }
+    }
+    .button_container{
+        width:auto;
+        .btn-custom{
+            border-radius:10px;
+            margin:5px;
+        }
+        .btn-purple{
+            background-color: #5A0BCF;
+            color:white;
+        }
+        .btn-green{
+            background-color: #38DDBF ;
+            color:white;
+        }
+    }
